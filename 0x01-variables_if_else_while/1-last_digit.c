@@ -17,11 +17,11 @@ int main(void)
 
 	printf("Last digit of %d is %d and is ", n, q);
 	if (q > 5)
-		printf("Greater than 5\n");
+		printf("greater than 5\n");
 	else if (q == 0)
 		printf("0\n");
 	else
-		printf("Less than 6 and not 0\n");
+		printf("less than 6 and not 0\n");
 	return (0);
 
 }
