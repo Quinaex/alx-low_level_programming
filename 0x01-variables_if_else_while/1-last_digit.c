@@ -2,11 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Assign a random number to the variable n
+ * main - Assign a random number to the variable n each time it is executed.
  * Return : 0 (success)
  */
-int main(void)
 
+int main(void)
 {
 	int n;
 	int q;
@@ -15,14 +15,13 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	q = n % 10;
 
+	printf("Last digit of %d is %d and is ", n, q);
 	if (q > 5)
-		printf("last digit of %d is %d and is greater than 5\n", n, q);
-
-	if (q == 0)
-		printf("last digit of %d is %d and 0\n", n, q);
-
-	if (q < 6 && q != 0)
-		printf("last digit of  %d is %d and is less than 6 and not 0\n", n, q);
-
+		printf("greater than 5\n");
+	else if (q == 0)
+		printf("0\n");
+	else
+		printf("less than 6 and not 0\n");
 	return (0);
+
 }
