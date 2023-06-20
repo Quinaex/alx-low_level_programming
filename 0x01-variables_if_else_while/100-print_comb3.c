@@ -6,17 +6,17 @@
 int main(void)
 {
 	int x = '0';
-	int y = '0';
+	int y = '9';
 
 	for (y = '0'; y <= '9'; y++)
 	{
 		for (x = '0'; x <= '9'; x++)
 		{
-			if (y > x)
+			if (!((x == y) || (y > x)))
 			{
 				putchar(y);
 				putchar(x);
-				if (x != '9' || y != '8')
+				if (!(x == '9' && y == '8'))
 				{
 					putchar(',');
 					putchar(' ');
