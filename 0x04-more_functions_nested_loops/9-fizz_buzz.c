@@ -27,7 +27,7 @@ int main(void)
 		}
 		else if (q % 5 == 0 && q % 3 == 0)
 		{
-			printf(" FizzBuzz ");
+			printf(" FizzBuzz");
 		}
 		else
 		{
